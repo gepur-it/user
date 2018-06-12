@@ -1,0 +1,38 @@
+{
+  "name": "gepur-it/user",
+  "description": "User for Gepur",
+  "type": "library",
+  "autoload": {
+    "psr-4": {
+      "GepurIt\\User\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "": "Tests/"
+    }
+  },
+  "require": {
+    "php": ">=7.1",
+    "symfony/security-core": "^4.1",
+    "doctrine/orm": "^2.6"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^7.2"
+  },
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Andrii Yakovlev",
+      "email": "yawa20@gmail.com"
+    },
+    {
+      "name": "Marina Mileva",
+      "email": "m934222258@gmail.com"
+    },
+    {
+      "name": "Viktor Pavlov",
+      "email": "zogxray@gmail.com"
+    }
+  ]
+}
