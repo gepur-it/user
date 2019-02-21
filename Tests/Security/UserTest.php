@@ -28,7 +28,7 @@ class UserTest extends TestCase
 
         $this->assertEquals($login, $user->__toString(), 'User::__toString() returns login');
         $this->assertEquals($roles, $user->getRoles(), 'User::getRoles() returns roles');
-        $this->assertEquals($ldapSid, $user->getLdapSid(), 'User::getLdapSid() returns ldap sid');
+        $this->assertEquals($ldapSid, $user->getUserId(), 'User::getLdapSid() returns ldap sid');
         $this->assertEquals($name, $user->getName(), 'User::getName() returns name');
         $this->assertEquals($login, $user->getLogin(), 'User::getLogin() returns login');
         $this->assertEquals($login, $user->getUsername(), 'User::getUsername() should return login');
@@ -55,8 +55,8 @@ class UserTest extends TestCase
         $this->assertEquals($anotherName, $user->getName(), 'User::getName should return last set name');
 
         $newSid = 'new_sid';
-        $user->setLdapSid($newSid);
-        $this->assertEquals($newSid, $user->getLdapSid());
+        $user->setUserId($newSid);
+        $this->assertEquals($newSid, $user->getUserId());
     }
 }
 
