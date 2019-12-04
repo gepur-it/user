@@ -2,7 +2,7 @@
   "name": "gepur-it/user",
   "description": "User for Gepur",
   "type": "library",
-  "version": "4.3.0",
+  "version": "5.0.0",
   "autoload": {
     "psr-4": {
       "GepurIt\\User\\": "src/"
@@ -15,7 +15,7 @@
   },
   "require": {
     "php": ">=7.3",
-    "symfony/security-core": "^4.3",
+    "symfony/security-core": "^4.3|^5.0",
     "doctrine/orm": ">=2.6"
   },
   "require-dev": {
